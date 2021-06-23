@@ -7,7 +7,7 @@
       <p>{{ user.name }}</p>
       <span>{{ user.email }}</span>
     </div>
-    <div class="col col-2">{{ user.numberOfOrders }} Orders</div>
+    <div class="col col-2">{{ user.numberOfOrders | shortNumber }} Orders</div>
     <div class="col col-3">
       <div class="col col-2">
         <span class="badge badge-green" [class.badge-red]="!user.isVerified">{{

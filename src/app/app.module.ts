@@ -12,6 +12,7 @@ import { ProductsManagementsComponent } from './pages/products-managements/produ
 import { OrdersManagementsComponent } from './pages/orders-managements/orders-managements.component';
 import { PaginatorComponent } from './shared/components/paginator/paginator.component';
 import { UserCardComponent } from './pages/components/user-card/user-card.component';
+import { ShortNumberPipe } from './shared/pipes/short-number.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { UserCardComponent } from './pages/components/user-card/user-card.compon
     OrdersManagementsComponent,
     PaginatorComponent,
     UserCardComponent,
+    ShortNumberPipe,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

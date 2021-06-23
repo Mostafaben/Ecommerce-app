@@ -50,7 +50,7 @@ export const USERS: Array<UserDetails> = [
     email: 'fm_benlagha@esi.dz',
     createdAt: new Date(),
     isVerified: false,
-    numberOfOrders: 12,
+    numberOfOrders: 123132,
     imageUrl: 'https://picsum.photos/123',
   },
 ];
