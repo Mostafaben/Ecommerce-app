@@ -1,0 +1,22 @@
+<div class="sideMenuContainer" [class.collapseMenu]="!isOpened">
+  <i
+    class="fas fa-arrow-left menu-btn"
+    id="menu"
+    [class.menu-btn-clicked]="!isOpened"
+    (click)="toggleSideMenu()"
+  ></i>
+
+  <div class="header"></div>
+  <div class="items">
+    <div
+      class="item"
+      (click)="changeSelectedItem(i)"
+      *ngFor="let item of items; let i = index"
+      [class.selectedItem]="selectedItem == i"
+      [routerLink]="item.url"
+    >
+      <i [class]="item.icon"></i>
+      <span>{{ item.name }}</span>
+    </div>
+  </div>
+</div>

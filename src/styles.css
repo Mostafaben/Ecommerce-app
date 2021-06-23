@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+:root {
+  --main-spacing: 10px;
+  --side-menu-width: 250px;
+  --nav-bar-height: 60px;
+  --side-menu-min-width: 90px;
+}
+* {
+  font-family: "Barlow Condensed";
+}
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: whitesmoke;
+}
+
+.routerLink {
+  text-decoration: none;
+}
+
+.mainContainer {
+  margin-top: var(--nav-bar-height);
+  margin-left: var(--side-menu-width);
+  transition-duration: 200ms;
+  padding: var(--main-spacing);
+}
+
+.mainContainerFullWidth {
+  margin-left: var(--side-menu-min-width);
+}

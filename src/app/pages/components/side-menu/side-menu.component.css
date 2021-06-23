@@ -1,0 +1,78 @@
+.sideMenuContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  height: 100vh;
+  position: fixed;
+  top: var(--nav-bar-height);
+  left: 0px;
+  padding: 20px 0px;
+  align-items: center;
+  width: var(--side-menu-width);
+  transition-duration: 200ms;
+}
+
+.items {
+  margin: auto 0px;
+}
+.item {
+  cursor: pointer;
+  height: 56px;
+  max-height: 46px;
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  padding: 0px 16px;
+  align-items: center;
+  margin: var(--main-spacing) 0px;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+.item i {
+  margin-right: var(--main-spacing);
+  width: 17;
+  font-size: 17px;
+}
+
+.selectedItem {
+  color: white;
+  background: #555454;
+}
+
+.item:hover {
+  color: white;
+  background: #555454;
+}
+
+.menu-btn {
+  border-radius: 15px;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  transition-duration: 400ms;
+  left: 200px;
+}
+
+.menu-btn-clicked {
+  transform: rotateY(180deg);
+  left: 35px;
+}
+
+.collapseMenu {
+  width: var(--side-menu-min-width) !important;
+}
+.collapseMenu .item {
+  justify-content: center;
+}
+.collapseMenu .item span {
+  display: none;
+}
+.collapseMenu .item i {
+  margin: 0px !important;
+}

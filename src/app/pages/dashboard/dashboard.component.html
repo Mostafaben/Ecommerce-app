@@ -1,0 +1,9 @@
+<nav-bar> </nav-bar>
+<side-menu
+  [isOpened]="isSideMenuOpen"
+  (sideMenuOpen)="toggleSideMenu($event)"
+></side-menu>
+
+<div class="mainContainer" [class.mainContainerFullWidth]="!isSideMenuOpen">
+  <router-outlet></router-outlet>
+</div>
