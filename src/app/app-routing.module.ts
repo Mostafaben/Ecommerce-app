@@ -28,10 +28,6 @@ const routes: Routes = [
         path: 'settings',
         component: SettingsComponent,
       },
-      {
-        path: '**',
-        redirectTo: 'users_managements',
-      },
     ],
   },
   {
@@ -40,7 +36,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'login',
   },
 ];
 

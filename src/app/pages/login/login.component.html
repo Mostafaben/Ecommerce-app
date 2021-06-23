@@ -1,1 +1,13 @@
-<p>login works!</p>
+<div class="loginContainer">
+  <img src="./../../../assets/shopify-tr.png" alt="logo" />
+  <form>
+    <h2>Admin Login</h2>
+    <span>email</span>
+    <input class="form-control" type="email" />
+    <span>password</span>
+    <input class="form-control" type="password" />
+    <button class="btn btn-primary" (click)="redirectToDashboard($event)">
+      Sign in
+    </button>
+  </form>
+</div>

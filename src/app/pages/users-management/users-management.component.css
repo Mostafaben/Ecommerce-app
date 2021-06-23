@@ -1,0 +1,60 @@
+.usersList {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+h4 {
+  margin: 0px;
+}
+
+.listHeader {
+  padding: var(--main-spacing);
+  padding-left: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listHeader .actions {
+  margin-left: auto;
+}
+
+.userCard {
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+.userCard:hover {
+  background-color: whitesmoke;
+}
+
+.userCard .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--main-spacing);
+}
+
+.userCard .informations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userCard .informations p {
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+.userCard .informations span {
+  color: #888;
+}
+
+.userCard img {
+  height: 70px;
+  border-radius: 50px;
+  margin-left: 20px;
+}

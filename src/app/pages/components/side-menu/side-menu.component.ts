@@ -1,7 +1,5 @@
-import { Input } from '@angular/core';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { NavigationEnd, Route, Router, RouterLink } from '@angular/router';
 import { PAGES } from '../../../shared/ui_config';
 
 @Component({
@@ -17,10 +15,9 @@ export class SideMenuComponent implements OnInit {
 
   public items = PAGES;
   public selectedItem: number = 0;
-  public menuBtn: any;
 
   ngOnInit(): void {
-    this.menuBtn = document.getElementById('menu');
+    this.getSelectedItem({ url: this._router.url });
     this.checkUrl();
   }
 
@@ -32,8 +29,7 @@ export class SideMenuComponent implements OnInit {
     });
   }
 
-  getSelectedItem(event: NavigationEnd): void {
-    const url = event.url;
+  getSelectedItem({ url }: any): void {
     this.selectedItem = this.items.findIndex((item) => url.includes(item.url));
   }
 
@@ -43,9 +39,6 @@ export class SideMenuComponent implements OnInit {
 
   toggleSideMenu() {
     this.isOpened = !this.isOpened;
-    // this.isOpened
-    //   ? this.menuBtn.classList.remove('menu-btn-clicked')
-    //   : this.menuBtn.classList.add('menu-btn-clicked');
     this.sideMenuOpen.emit(this.isOpened);
   }
 }
