@@ -1,0 +1,50 @@
+.paginatorContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.page {
+  margin: 0px 5px;
+  height: 34px;
+  width: 34px;
+  border-radius: 20px;
+  transition-duration: 200ms;
+  cursor: pointer;
+  color: #555;
+}
+
+i {
+  height: 34px;
+  width: 34px;
+  border-radius: 20px;
+  margin: 0px 20px;
+  color: #555;
+}
+
+.selectedPage {
+  font-weight: 600;
+  color: white;
+  background-color: #69ede2;
+}
+
+i:hover,
+.page:hover {
+  font-weight: 600;
+  color: white;
+  background-color: #69ede2;
+}
+
+.leftPadding {
+  padding-right: 3px;
+}
+.rightPadding {
+  padding-left: 3px;
+}
+
+.disable {
+  opacity: 0;
+  pointer-events: none;
+}

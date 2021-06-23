@@ -66,17 +66,27 @@ body {
 }
 
 .badge {
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-radius: 20px;
   border: 1px solid black;
   color: black;
   background-color: white;
   border-top-left-radius: 0px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
 }
 
 .badge-green {
   color: green;
   border-color: green;
+}
+.badge-red {
+  color: red;
+  border-color: red;
+}
+
+.centerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

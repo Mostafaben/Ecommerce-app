@@ -7,22 +7,6 @@
       <button class="btn btn-primary">Filter Users</button>
     </div>
   </div>
-  <div class="userCard" *ngFor="let _ of usersList">
-    <div class="row">
-      <div class="col col-1">
-        <img src="https://picsum.photos/400" alt="user-image" />
-      </div>
-      <div class="col col-3 informations">
-        <p>User Name</p>
-        <span>test@email.com</span>
-      </div>
-      <div class="col col-2">03 Orders</div>
-      <div class="col col-3">
-        <div class="col col-2">
-          <span class="badge badge-green">verified</span>
-        </div>
-      </div>
-      <div class="col col-2">{{ 12 | date: "short" }}</div>
-    </div>
-  </div>
+  <app-user-card *ngFor="let user of usersList" [user]="user"></app-user-card>
+  <paginator [numberOfPages]="12" [selectedPage]="0"></paginator>
 </div>

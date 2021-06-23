@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { USERS } from 'src/app/dummy_data';
 
 @Component({
   selector: 'app-users-management',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class UsersManagementComponent implements OnInit {
   constructor() {}
 
-  public usersList = new Array(5);
+  public usersList = USERS;
 
   ngOnInit(): void {}
 }

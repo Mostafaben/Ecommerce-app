@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ADMIN } from 'src/app/dummy_data';
+import { AdminDetails } from 'src/app/shared/interfaces/admin_interfaces';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
   public isSideMenuOpen = true;
+  public adminDetails: AdminDetails = ADMIN;
 
   constructor() {}
 

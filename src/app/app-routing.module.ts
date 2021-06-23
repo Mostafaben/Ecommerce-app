@@ -9,6 +9,10 @@ import { UsersManagementComponent } from './pages/users-management/users-managem
 
 const routes: Routes = [
   {
+    path: 'login',
+    component: LoginComponent,
+  },
+  {
     path: '',
     component: DashboardComponent,
     children: [
@@ -28,15 +32,15 @@ const routes: Routes = [
         path: 'settings',
         component: SettingsComponent,
       },
+      {
+        path: '**',
+        redirectTo: 'users_management',
+      },
     ],
   },
   {
-    path: 'login',
-    component: LoginComponent,
-  },
-  {
     path: '**',
-    redirectTo: 'login',
+    redirectTo: '',
   },
 ];
 

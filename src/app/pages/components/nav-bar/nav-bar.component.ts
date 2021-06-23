@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AdminDetails } from 'src/app/shared/interfaces/admin_interfaces';
 
 @Component({
   selector: 'nav-bar',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.css'],
 })
 export class NavBarComponent implements OnInit {
+  @Input() admin: AdminDetails | undefined;
+
   constructor() {}
 
   ngOnInit(): void {}

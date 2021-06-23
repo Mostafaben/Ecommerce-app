@@ -1,0 +1,20 @@
+<div class="paginatorContainer" *ngIf="numberOfPages > 0">
+  <i
+    class="fas fa-chevron-left centerContent leftPadding"
+    (click)="previousPage()"
+    [class.disable]="range == 0"
+  ></i>
+  <span
+    class="page centerContent"
+    (click)="changePage(i)"
+    *ngFor="let page of setPages(); let i = index"
+    [class.selectedPage]="i == selectedPage"
+  >
+    {{ range * 10 + i + 1 }}
+  </span>
+  <i
+    class="fas fa-chevron-right centerContent rightPadding"
+    (click)="nextPage()"
+    [class.disable]="(range + 1) * MAX_PAGES >= numberOfPages"
+  ></i>
+</div>

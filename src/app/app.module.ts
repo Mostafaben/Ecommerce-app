@@ -10,6 +10,8 @@ import { UsersManagementComponent } from './pages/users-management/users-managem
 import { SettingsComponent } from './pages/settings/settings.component';
 import { ProductsManagementsComponent } from './pages/products-managements/products-managements.component';
 import { OrdersManagementsComponent } from './pages/orders-managements/orders-managements.component';
+import { PaginatorComponent } from './shared/components/paginator/paginator.component';
+import { UserCardComponent } from './pages/components/user-card/user-card.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { OrdersManagementsComponent } from './pages/orders-managements/orders-ma
     SettingsComponent,
     ProductsManagementsComponent,
     OrdersManagementsComponent,
+    PaginatorComponent,
+    UserCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
