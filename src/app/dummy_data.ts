@@ -4,7 +4,7 @@ import { UserDetails } from './shared/interfaces/user_interfaces';
 export const ADMIN: AdminDetails = {
   name: 'Admin Name',
   email: 'admin_email@gmail.com',
-  imageUrl: 'https://picsum.photos/400',
+  imageUrl: null,
 };
 
 export const USERS: Array<UserDetails> = [

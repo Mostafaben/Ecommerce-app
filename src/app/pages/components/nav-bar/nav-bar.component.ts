@@ -8,6 +8,7 @@ import { AdminDetails } from 'src/app/shared/interfaces/admin_interfaces';
 })
 export class NavBarComponent implements OnInit {
   @Input() admin: AdminDetails | undefined;
+  readonly NO_IMG_URL = '/assets/download.jpg';
 
   constructor() {}
 

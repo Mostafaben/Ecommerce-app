@@ -6,11 +6,7 @@
     <span>{{ admin.email }}</span>
   </div>
   <img
-    [src]="
-      admin && admin.imageUrl
-        ? admin.imageUrl
-        : './../../../../assets/download.jpg'
-    "
+    [src]="admin && admin.imageUrl ? admin.imageUrl : NO_IMG_URL"
     class="adminImage"
   />
 </nav>
