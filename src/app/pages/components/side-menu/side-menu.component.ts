@@ -13,7 +13,7 @@ export class SideMenuComponent implements OnInit {
 
   constructor(private _router: Router) {}
 
-  public items = PAGES;
+  readonly ITEMS = PAGES;
   public selectedItem: number = 0;
 
   ngOnInit(): void {
@@ -30,7 +30,7 @@ export class SideMenuComponent implements OnInit {
   }
 
   getSelectedItem({ url }: any): void {
-    this.selectedItem = this.items.findIndex((item) => url.includes(item.url));
+    this.selectedItem = this.ITEMS.findIndex((item) => url.includes(item.url));
   }
 
   changeSelectedItem(index: number): void {

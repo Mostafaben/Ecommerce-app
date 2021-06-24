@@ -6,6 +6,8 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { OrdersManagementsComponent } from './pages/orders-managements/orders-managements.component';
 import { ProductsManagementsComponent } from './pages/products-managements/products-managements.component';
 import { UsersManagementComponent } from './pages/users-management/users-management.component';
+import { ProductsListingComponent } from './pages/products-listing/products-listing.component';
+import { TemplatesListingsComponent } from './pages/templates-listings/templates-listings.component';
 
 const routes: Routes = [
   {
@@ -23,6 +25,20 @@ const routes: Routes = [
       {
         path: 'products_management',
         component: ProductsManagementsComponent,
+        children: [
+          {
+            path: 'products_listing',
+            component: ProductsListingComponent,
+          },
+          {
+            path: 'templates',
+            component: TemplatesListingsComponent,
+          },
+          {
+            path: '**',
+            redirectTo: 'products_listing',
+          },
+        ],
       },
       {
         path: 'users_management',

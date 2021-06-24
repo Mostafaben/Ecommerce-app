@@ -5,8 +5,18 @@
   --nav-bar-height: 60px;
   --side-menu-min-width: 90px;
 }
+
 * {
   font-family: "Barlow Condensed";
+}
+
+h4,
+p,
+h1,
+h2,
+h3,
+span {
+  margin: 0px;
 }
 
 html,
@@ -89,4 +99,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.listItems {
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+
+.listHeader {
+  padding: var(--main-spacing);
+  padding-left: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listHeader .actions {
+  margin-left: auto;
 }

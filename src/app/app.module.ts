@@ -13,6 +13,8 @@ import { OrdersManagementsComponent } from './pages/orders-managements/orders-ma
 import { PaginatorComponent } from './shared/components/paginator/paginator.component';
 import { UserCardComponent } from './pages/components/user-card/user-card.component';
 import { ShortNumberPipe } from './shared/pipes/short-number.pipe';
+import { ProductsListingComponent } from './pages/products-listing/products-listing.component';
+import { TemplatesListingsComponent } from './pages/templates-listings/templates-listings.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ShortNumberPipe } from './shared/pipes/short-number.pipe';
     PaginatorComponent,
     UserCardComponent,
     ShortNumberPipe,
+    ProductsListingComponent,
+    TemplatesListingsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

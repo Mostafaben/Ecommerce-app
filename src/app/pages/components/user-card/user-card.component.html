@@ -1,7 +1,12 @@
 <div class="userCard" *ngIf="user">
   <div class="row">
     <div class="col col-1">
-      <img [src]="user.imageUrl" alt="user-image" />
+      <img
+        [src]="
+          user.imageUrl ? user.imageUrl : './../../../../assets/download.jpg'
+        "
+        alt="image"
+      />
     </div>
     <div class="col col-3 informations">
       <p>{{ user.name }}</p>

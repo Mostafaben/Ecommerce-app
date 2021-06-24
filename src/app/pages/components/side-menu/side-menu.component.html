@@ -11,7 +11,7 @@
     <div
       class="item"
       (click)="changeSelectedItem(i)"
-      *ngFor="let item of items; let i = index"
+      *ngFor="let item of ITEMS; let i = index"
       [class.selectedItem]="selectedItem == i"
       [routerLink]="item.url"
     >

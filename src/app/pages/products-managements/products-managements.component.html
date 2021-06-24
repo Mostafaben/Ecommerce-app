@@ -1,12 +1,14 @@
 <p class="pageTitle">Products Managements</p>
-
 <div class="subNav">
-  <div class="item selectedItem">
-    <i class="fas fa-archive"></i>
-    <span>Products</span>
-  </div>
-  <div class="item">
-    <i class="fas fa-shapes"></i>
-    <span>Templates</span>
+  <div
+    class="item"
+    *ngFor="let item of SUB_PAGES; let i = index"
+    [routerLink]="item.url"
+    [class.selectedItem]="i == selectedPage"
+    (click)="changePage(i)"
+  >
+    <i [class]="item.icon"></i>
+    <span>{{ item.name }}</span>
   </div>
 </div>
+<router-outlet></router-outlet>

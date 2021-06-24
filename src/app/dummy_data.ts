@@ -33,7 +33,7 @@ export const USERS: Array<UserDetails> = [
     createdAt: new Date(),
     isVerified: true,
     numberOfOrders: 3,
-    imageUrl: 'https://picsum.photos/200',
+    imageUrl: null,
   },
   {
     id: 1,

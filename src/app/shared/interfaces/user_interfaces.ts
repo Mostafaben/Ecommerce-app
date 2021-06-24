@@ -2,7 +2,7 @@ export interface User {
   id: number;
   name: string;
   email: string;
-  imageUrl: string;
+  imageUrl: string | undefined | null;
 }
 
 export interface UserDetails extends User {
