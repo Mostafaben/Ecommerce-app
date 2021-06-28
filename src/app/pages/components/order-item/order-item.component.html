@@ -1,14 +1,14 @@
 <div class="orderItemContainer">
   <div class="row">
     <div class="col col-1">
-      <span class="centerContent id">{{ orderItem.id }}</span>
+      <img [src]="orderItem.user.imageUrl" />
     </div>
     <div class="col col-3 informations">
       <p>{{ orderItem.user.name }}</p>
-      <div class="span">{{ orderItem.user.email }}</div>
+      <span>{{ orderItem.user.email }}</span>
     </div>
     <div class="col col-3 products">
-      <p *ngFor="let product of orderItem.products">
+      <p *ngFor="let product of orderItem.products.slice(0, 2)">
         {{ product.name }}
       </p>
     </div>

@@ -30,14 +30,11 @@
   color: #888;
 }
 
-.id {
-  background-color: var(--green-color);
+img {
+  background-color: #eee;
   height: 50px;
   width: 50px;
-  color: white;
   border-radius: 50px;
-  font-size: 13px;
-  font-weight: bold;
 }
 
 .products {

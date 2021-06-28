@@ -3,110 +3,49 @@ import { Order } from './shared/interfaces/orders_interfaces';
 import { Product } from './shared/interfaces/product_interfaces';
 import { UserDetails } from './shared/interfaces/user_interfaces';
 
+import * as faker from 'faker';
+
 export const ADMIN: AdminDetails = {
-  name: 'Admin Name',
-  email: 'admin_email@gmail.com',
-  imageUrl: null,
+  name: faker.name.findName(),
+  email: faker.internet.email(),
+  imageUrl: faker.image.avatar(),
 };
 
-export const USERS: Array<UserDetails> = [
-  {
-    id: 1,
-    name: 'Mostafa ben',
-    email: 'fm_benlagha@esi.dz',
-    createdAt: new Date(),
-    isVerified: true,
-    numberOfOrders: 10,
-    imageUrl: 'https://picsum.photos/400',
-  },
-  {
-    id: 2,
-    name: 'Raid lamri',
-    email: 'fm_benlagha@esi.dz',
-    createdAt: new Date(),
-    isVerified: false,
-    numberOfOrders: 12,
-    imageUrl: 'https://picsum.photos/123',
-  },
-  {
-    id: 3,
-    name: 'Houssem Telli',
-    email: 'fm_benlagha@esi.dz',
-    createdAt: new Date(),
-    isVerified: true,
-    numberOfOrders: 3,
-    imageUrl: null,
-  },
-  {
-    id: 1,
-    name: 'Ismail Lakhlaf',
-    email: 'fm_benlagha@esi.dz',
-    createdAt: new Date(),
-    isVerified: true,
-    numberOfOrders: 10,
-    imageUrl: 'https://picsum.photos/400',
-  },
-  {
-    id: 2,
-    name: 'Karim Tamani',
-    email: 'fm_benlagha@esi.dz',
-    createdAt: new Date(),
-    isVerified: false,
-    numberOfOrders: 123132,
-    imageUrl: 'https://picsum.photos/123',
-  },
-];
+export const PRODUCTS: Array<Product> = new Array(10)
+  .fill(null)
+  .map((_, index) => {
+    return {
+      price: parseInt(faker.commerce.price()),
+      name: faker.commerce.product(),
+      id: index,
+      imageUrl: faker.image.image(),
+    };
+  });
 
-export const PRODUCTS: Array<Product> = [
-  { id: 1, name: 'IPHONE 1' },
-  { id: 1, name: 'GALAXY S20' },
-  { id: 1, name: 'T-SHIRT' },
-];
+console.log(faker);
 
-export const ORDERS: Array<Order> = [
-  {
-    id: 1,
-    user: USERS[0],
-    totalPrice: 10040,
-    createdAt: new Date(),
+export const USERS: Array<UserDetails> = new Array(7)
+  .fill(null)
+  .map((_, index) => {
+    return {
+      id: index,
+      name: faker.name.findName(),
+      email: faker.internet.email(),
+      imageUrl: faker.image.avatar(),
+      isVerified: faker.datatype.boolean(),
+      createdAt: faker.date.past(),
+      numberOfOrders: faker.datatype.number(),
+    };
+  });
+
+export const ORDERS: Array<Order> = new Array(5).fill(null).map((_, index) => {
+  return {
+    id: faker.datatype.number(),
+    user: USERS[index],
+    totalPrice: parseInt(faker.commerce.price()),
+    createdAt: faker.date.past(),
     products: PRODUCTS,
-    status: false,
-    quantity: 10,
-  },
-  {
-    id: 2,
-    user: USERS[1],
-    totalPrice: 10040,
-    createdAt: new Date(),
-    products: PRODUCTS,
-    status: false,
-    quantity: 10,
-  },
-  {
-    id: 13,
-    user: USERS[2],
-    totalPrice: 10040,
-    createdAt: new Date(),
-    products: PRODUCTS,
-    status: false,
-    quantity: 10,
-  },
-  {
-    id: 12,
-    user: USERS[3],
-    totalPrice: 10040,
-    createdAt: new Date(),
-    products: PRODUCTS.slice(0, 2),
-    status: false,
-    quantity: 10,
-  },
-  {
-    id: 4,
-    user: USERS[4],
-    totalPrice: 10040,
-    createdAt: new Date(),
-    products: PRODUCTS,
-    status: false,
-    quantity: 10,
-  },
-];
+    status: faker.datatype.boolean(),
+    quantity: faker.datatype.number(),
+  };
+});

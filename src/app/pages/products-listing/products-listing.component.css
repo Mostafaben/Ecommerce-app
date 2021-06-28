@@ -1,0 +1,19 @@
+.filterBar {
+  margin: calc(var(--main-spacing) * 2) 0px;
+  margin-bottom: var(--main-spacing);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.col {
+  padding: var(--main-spacing);
+}
+
+input {
+  margin-right: calc(var(--main-spacing) * 2);
+}
+
+.btn-success {
+  min-width: fit-content;
+}
