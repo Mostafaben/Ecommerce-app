@@ -13,7 +13,7 @@
   border-radius: 20px;
   transition-duration: 200ms;
   cursor: pointer;
-  color: #555;
+  color: var(--dark-color);
 }
 
 i {
@@ -21,20 +21,20 @@ i {
   width: 34px;
   border-radius: 20px;
   margin: 0px 20px;
-  color: #555;
+  color: var(--dark-color);
 }
 
 .selectedPage {
   font-weight: 600;
   color: white;
-  background-color: #69ede2;
+  background-color: var(--green-color);
 }
 
 i:hover,
 .page:hover {
   font-weight: 600;
   color: white;
-  background-color: #69ede2;
+  background-color: var(--green-color);
 }
 
 .leftPadding {

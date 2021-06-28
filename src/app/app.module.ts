@@ -15,6 +15,7 @@ import { UserCardComponent } from './pages/components/user-card/user-card.compon
 import { ShortNumberPipe } from './shared/pipes/short-number.pipe';
 import { ProductsListingComponent } from './pages/products-listing/products-listing.component';
 import { TemplatesListingsComponent } from './pages/templates-listings/templates-listings.component';
+import { OrderItemComponent } from './pages/components/order-item/order-item.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { TemplatesListingsComponent } from './pages/templates-listings/templates
     ShortNumberPipe,
     ProductsListingComponent,
     TemplatesListingsComponent,
+    OrderItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

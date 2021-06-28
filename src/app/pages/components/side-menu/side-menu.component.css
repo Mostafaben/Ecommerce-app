@@ -1,7 +1,7 @@
 .sideMenuContainer {
   display: flex;
   flex-direction: column;
-  background-color: #333333;
+  background-color: var(--dark-color);
   min-height: fit-content;
   height: calc(100vh - var(--main-spacing));
   overflow-y: auto;

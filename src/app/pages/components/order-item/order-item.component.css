@@ -1,0 +1,50 @@
+.orderItemContainer {
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition-duration: 100ms;
+}
+
+.orderItemContainer:hover {
+  background-color: whitesmoke;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--main-spacing);
+}
+
+.informations {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.informations p {
+  font-size: 18px;
+  padding: 0px;
+  margin: 0px;
+}
+.informations span {
+  color: #888;
+}
+
+.id {
+  background-color: var(--green-color);
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+}
+
+.products p {
+  margin: 0px 4px;
+}
