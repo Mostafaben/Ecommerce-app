@@ -15,14 +15,12 @@ export const PRODUCTS: Array<Product> = new Array(10)
   .fill(null)
   .map((_, index) => {
     return {
+      id: index,
       price: parseInt(faker.commerce.price()),
       name: faker.commerce.product(),
-      id: index,
       imageUrl: faker.image.image(),
     };
   });
-
-console.log(faker);
 
 export const USERS: Array<UserDetails> = new Array(7)
   .fill(null)
@@ -34,6 +32,8 @@ export const USERS: Array<UserDetails> = new Array(7)
       imageUrl: faker.image.avatar(),
       isVerified: faker.datatype.boolean(),
       createdAt: faker.date.past(),
+      address: faker.address.streetName(),
+      phoneNumber: faker.phone.phoneNumber(),
       numberOfOrders: faker.datatype.number(),
     };
   });

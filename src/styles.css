@@ -102,8 +102,8 @@ body {
 }
 
 .badge-green {
-  color: var(--green-color);
-  border-color: var(--green-color);
+  color: rgb(27, 165, 27);
+  border-color: rgb(27, 165, 27);
 }
 .badge-red {
   color: rgb(221, 82, 82);
