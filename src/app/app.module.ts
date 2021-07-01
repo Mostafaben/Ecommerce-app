@@ -17,7 +17,9 @@ import { ProductsListingComponent } from './pages/products-listing/products-list
 import { TemplatesListingsComponent } from './pages/templates-listings/templates-listings.component';
 import { OrderItemComponent } from './pages/components/order-item/order-item.component';
 import { ProductCardComponent } from './pages/components/product-card/product-card.component';
-
+import { CategoriesManagementComponent } from './pages/categories-management/categories-management.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,8 +38,14 @@ import { ProductCardComponent } from './pages/components/product-card/product-ca
     TemplatesListingsComponent,
     OrderItemComponent,
     ProductCardComponent,
+    CategoriesManagementComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

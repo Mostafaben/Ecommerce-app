@@ -16,6 +16,11 @@ export const PAGES: Array<MenuPage> = [
     icon: 'fas fa-box',
   },
   {
+    url: '/categories_management',
+    name: 'Categories Management',
+    icon: 'fas fa-stream',
+  },
+  {
     url: '/settings',
     name: 'Account Settings',
     icon: 'fas fa-cogs',

@@ -8,6 +8,7 @@ import { ProductsManagementsComponent } from './pages/products-managements/produ
 import { UsersManagementComponent } from './pages/users-management/users-management.component';
 import { ProductsListingComponent } from './pages/products-listing/products-listing.component';
 import { TemplatesListingsComponent } from './pages/templates-listings/templates-listings.component';
+import { CategoriesManagementComponent } from './pages/categories-management/categories-management.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
             redirectTo: 'products_listing',
           },
         ],
+      },
+      {
+        path: 'categories_management',
+        component: CategoriesManagementComponent,
       },
       {
         path: 'users_management',

@@ -26,6 +26,7 @@ nav {
   margin-right: var(--main-spacing);
   margin-left: auto;
   display: flex;
+  cursor: pointer;
   flex-direction: column;
 }
 .profile span {
@@ -43,4 +44,13 @@ nav {
   margin-right: var(--main-spacing);
   border-radius: 25px;
   background-color: whitesmoke;
+}
+
+.menuItem i {
+  color: #666;
+  font-size: 13px;
+}
+.menuItem span {
+  margin: 0px 20px;
+  font-size: 14px !important;
 }
