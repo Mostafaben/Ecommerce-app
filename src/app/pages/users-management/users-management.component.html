@@ -6,6 +6,8 @@
       <button class="btn btn-primary">Filter Users</button>
     </div>
   </div>
-  <app-user-card *ngFor="let user of usersList" [user]="user"></app-user-card>
+  <div class="listItemsContent">
+    <app-user-card *ngFor="let user of usersList" [user]="user"></app-user-card>
+  </div>
   <paginator [numberOfPages]="12" [selectedPage]="0"></paginator>
 </div>

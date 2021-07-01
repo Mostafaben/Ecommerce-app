@@ -19,6 +19,8 @@ export const PRODUCTS: Array<Product> = new Array(10)
       price: parseInt(faker.commerce.price()),
       name: faker.commerce.product(),
       imageUrl: faker.image.image(),
+      category: faker.commerce.department(),
+      type : faker.commerce.department(), 
     };
   });
 
@@ -38,7 +40,7 @@ export const USERS: Array<UserDetails> = new Array(7)
     };
   });
 
-export const ORDERS: Array<Order> = new Array(5).fill(null).map((_, index) => {
+export const ORDERS: Array<Order> = new Array(7).fill(null).map((_, index) => {
   return {
     id: faker.datatype.number(),
     user: USERS[index],

@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class PaginatorComponent implements OnInit {
   readonly MAX_PAGES = 10;
 
-  @Input() numberOfPages: number = 12;
+  @Input() numberOfPages: number = 22;
   @Input() selectedPage: number = 0;
   @Output() pageChanged: EventEmitter<number> = new EventEmitter();
   public range = 0;

@@ -6,16 +6,34 @@
   border: 1px solid #eee;
   border-radius: 3px;
   overflow: hidden;
+  position: relative;
   transition-duration: 200ms;
+}
+
+.type { 
+  position: absolute;
+  right: var(--main-spacing);
+  top: var(--main-spacing);  
+  background-color: var(--green-color);
+  padding: 6px var(--main-spacing);
+  font-size: 12px;
+  border-radius: 4px;
+  color: white; 
 }
 
 .productContainer:hover {
   box-shadow: 1px 2px 3px rgb(0, 0, 0, 0.05);
+  transform: scale(1.01);
 }
 
 .productContainer img {
   height: 200px;
   background-color: #eee;
+}
+
+
+.productContent p { 
+  font-weight: bold; 
 }
 
 .productContent {
