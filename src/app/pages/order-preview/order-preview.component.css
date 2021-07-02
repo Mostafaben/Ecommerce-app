@@ -26,12 +26,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
 }
 
-.product .col {
-  font-size: 16px;
-}
 .colored {
   background-color: whitesmoke;
 }
@@ -44,10 +40,10 @@
 
 p,
 span {
-  font-size: 16px;
   padding: 0px;
   margin: 4px 0px;
 }
+
 h3 {
   font-size: 20px;
 }

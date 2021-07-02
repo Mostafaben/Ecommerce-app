@@ -7,7 +7,7 @@ export const PAGES: Array<MenuPage> = [
   },
   {
     url: '/orders_management',
-    name: 'orders Management',
+    name: 'Orders Management',
     icon: 'fas fa-box',
   },
   {

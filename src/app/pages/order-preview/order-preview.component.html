@@ -19,7 +19,7 @@
     </div>
 
     <div class="col col-12 col-md-12 products">
-      <h3>Products</h3>
+      <h4>Products</h4>
       <div
         class="product row"
         *ngFor="let product of products; let i = index"
@@ -31,12 +31,12 @@
         <div class="col">{{ product.price }} .DA</div>
         <div class="col">{{ product.price * (i * i + 1) }} .DA</div>
       </div>
-      <h3 class="total">Total : 300123 DA</h3>
+      <h4 class="total">Total : 300123 DA</h4>
     </div>
   </div>
 </div>
 
 <div class="actions">
-  <button class="btn btn-danger">Cancel Order</button>
-  <button class="btn btn-success">Approve Order</button>
+  <button class="btn btn-outline-danger">Cancel</button>
+  <button class="btn btn-outline-success">Approve</button>
 </div>
