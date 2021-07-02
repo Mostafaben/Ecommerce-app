@@ -23,7 +23,7 @@
 }
 
 * {
-  font-family: "Barlow Condensed", "Rubik";
+  font-family: "Barlow Condensed";
 }
 
 h4,
@@ -33,6 +33,7 @@ h2,
 h3,
 span {
   margin: 0px;
+  font-family: "Barlow Condensed" !important;
 }
 
 html,
@@ -40,6 +41,7 @@ body {
   padding: 0px;
   margin: 0px;
   background-color: whitesmoke;
+  height: fit-content !important;
 }
 
 .routerLink {
@@ -58,8 +60,8 @@ body {
 }
 
 .pageTitle {
-  font-size: 20px;
-  margin: 20px 0px;
+  font-size: 20px !important;
+  margin: 20px 0px 20px 0px !important;
 }
 
 .subNav {
@@ -133,6 +135,12 @@ body {
   align-items: center;
 }
 
+.listHeader h4 {
+  font-family: unset;
+  margin: 0px;
+  font-size: 20px;
+}
+
 .listHeader .actions {
   margin-left: auto;
 }
@@ -146,5 +154,11 @@ body {
   color: #888;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

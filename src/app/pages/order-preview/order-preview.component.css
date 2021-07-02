@@ -1,0 +1,72 @@
+.orderCard {
+  padding: calc(var(--main-spacing) * 2);
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid #eee;
+}
+.campanyDetails {
+  padding-top: 6px;
+}
+
+.clientDetails,
+.campanyDetails {
+  display: flex;
+  flex-direction: column;
+}
+.products {
+  margin-top: 20px;
+  padding: 0px 30px;
+}
+
+.product {
+  padding: 16px 0px;
+}
+
+.product .col:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.product .col {
+  font-size: 16px;
+}
+.colored {
+  background-color: whitesmoke;
+}
+
+.total {
+  margin-top: 10px;
+  margin-left: auto;
+  width: fit-content;
+}
+
+p,
+span {
+  font-size: 16px;
+  padding: 0px;
+  margin: 4px 0px;
+}
+h3 {
+  font-size: 20px;
+}
+
+span {
+  color: #888;
+}
+
+img {
+  border: 1px solid #eee;
+  max-height: 100px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: calc(var(--main-spacing) * 2);
+}
+.btn {
+  margin-left: calc(var(--main-spacing) * 2);
+}

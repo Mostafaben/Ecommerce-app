@@ -1,10 +1,10 @@
 <div class="filterBar">
   <input type="search" class="form-control" placeholder="search...." />
-  <button class="btn btn-success">Create Product</button>
+  <button class="btn btn-primary">Create Product</button>
 </div>
 <div class="row">
   <div
-    class="col col-12 col-sm-6 col-md-4 col-xl-3"
+    class="col col-12 col-sm-6 col-md-4 col-xl-3 col-xxl-2"
     *ngFor="let product of products"
   >
     <app-product-card [product]="product"></app-product-card>

@@ -14,6 +14,6 @@ input {
   margin-right: calc(var(--main-spacing) * 2);
 }
 
-.btn-success {
+.btn-primary {
   min-width: fit-content;
 }

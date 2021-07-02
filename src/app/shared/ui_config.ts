@@ -6,14 +6,14 @@ export const PAGES: Array<MenuPage> = [
     icon: 'far fa-user',
   },
   {
-    url: '/products_management',
-    name: 'Products Managements',
-    icon: 'fas fa-archive',
-  },
-  {
     url: '/orders_management',
     name: 'orders Management',
     icon: 'fas fa-box',
+  },
+  {
+    url: '/products_management',
+    name: 'Products Managements',
+    icon: 'fas fa-archive',
   },
   {
     url: '/categories_management',

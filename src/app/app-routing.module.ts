@@ -9,6 +9,7 @@ import { UsersManagementComponent } from './pages/users-management/users-managem
 import { ProductsListingComponent } from './pages/products-listing/products-listing.component';
 import { TemplatesListingsComponent } from './pages/templates-listings/templates-listings.component';
 import { CategoriesManagementComponent } from './pages/categories-management/categories-management.component';
+import { OrderPreviewComponent } from './pages/order-preview/order-preview.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
       {
         path: 'orders_management',
         component: OrdersManagementsComponent,
+      },
+      {
+        path: 'orders_management/:id',
+        component: OrderPreviewComponent,
       },
       {
         path: 'products_management',

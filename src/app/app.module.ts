@@ -20,6 +20,7 @@ import { ProductCardComponent } from './pages/components/product-card/product-ca
 import { CategoriesManagementComponent } from './pages/categories-management/categories-management.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
+import { OrderPreviewComponent } from './pages/order-preview/order-preview.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { MatMenuModule } from '@angular/material/menu';
     OrderItemComponent,
     ProductCardComponent,
     CategoriesManagementComponent,
+    OrderPreviewComponent,
   ],
   imports: [
     BrowserModule,

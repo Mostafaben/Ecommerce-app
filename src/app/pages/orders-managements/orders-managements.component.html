@@ -21,6 +21,7 @@
   <app-order-item
     *ngFor="let order of ORDERS"
     [orderItem]="order"
+    [routerLink]="'' + order.id"
   ></app-order-item>
   <paginator></paginator>
 </div>

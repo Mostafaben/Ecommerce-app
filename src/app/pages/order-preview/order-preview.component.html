@@ -1,0 +1,42 @@
+<p class="pageTitle">Order #{{ orderId }}</p>
+<div class="orderCard">
+  <div class="row">
+    <div class="col col-4 col-md-2">
+      <img src="./../../../assets/shopify-tr.png" />
+    </div>
+
+    <div class="col col-8 col-md-4 campanyDetails">
+      <p>Campany Name</p>
+      <span>06643232324</span>
+      <span>Babzouar, Alger. Algeria</span>
+    </div>
+
+    <div class="col col-12 col-md-6 clientDetails">
+      <p>{{ user.name }}</p>
+      <span>{{ user.email }}</span>
+      <p>{{ user.address }}</p>
+      <span>{{ user.phoneNumber }}</span>
+    </div>
+
+    <div class="col col-12 col-md-12 products">
+      <h3>Products</h3>
+      <div
+        class="product row"
+        *ngFor="let product of products; let i = index"
+        [class.colored]="i % 2 == 0"
+      >
+        <div class="col col-1">{{ i + 1 }}</div>
+        <div class="col">{{ product.name }}</div>
+        <div class="col">{{ i * i + 1 }}</div>
+        <div class="col">{{ product.price }} .DA</div>
+        <div class="col">{{ product.price * (i * i + 1) }} .DA</div>
+      </div>
+      <h3 class="total">Total : 300123 DA</h3>
+    </div>
+  </div>
+</div>
+
+<div class="actions">
+  <button class="btn btn-danger">Cancel Order</button>
+  <button class="btn btn-success">Approve Order</button>
+</div>

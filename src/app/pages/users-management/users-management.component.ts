@@ -9,7 +9,7 @@ import { USERS } from 'src/app/dummy_data';
 export class UsersManagementComponent implements OnInit {
   constructor() {}
 
-  public usersList = USERS;
+  public usersList = USERS.concat(...USERS);
 
   ngOnInit(): void {}
 }
