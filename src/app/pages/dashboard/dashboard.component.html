@@ -1,7 +1,8 @@
-<nav-bar [admin]="adminDetails"> </nav-bar>
+<nav-bar [isSideMenuOpen]="isSideMenuOpen"></nav-bar>
 <side-menu
   [isOpened]="isSideMenuOpen"
   (sideMenuOpen)="toggleSideMenu($event)"
+  [admin]="adminDetails"
 ></side-menu>
 
 <div class="mainContainer" [class.mainContainerFullWidth]="!isSideMenuOpen">

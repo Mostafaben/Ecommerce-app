@@ -1,4 +1,14 @@
 <div class="sideMenuContainer" [class.collapseMenu]="!isOpened">
+  <img
+    *ngIf="isOpened"
+    [src]="admin && admin.imageUrl ? admin.imageUrl : NO_IMG_URL"
+    class="adminImage"
+  />
+  <div class="profile" *ngIf="admin && isOpened">
+    <p>{{ admin.name }}</p>
+    <span>{{ admin.email }}</span>
+  </div>
+
   <i
     class="fas fa-arrow-left menu-btn"
     id="menu"

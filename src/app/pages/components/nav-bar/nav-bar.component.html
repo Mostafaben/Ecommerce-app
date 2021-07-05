@@ -1,25 +1,10 @@
-<nav>
+<nav [class.expand]="!isSideMenuOpen">
   <img src="/assets/shopify-tr.png" class="logo" />
   <span class="siteName">Site Name</span>
-  <div class="profile" *ngIf="admin" [matMenuTriggerFor]="menu">
-    <p>{{ admin.name }}</p>
-    <span>{{ admin.email }}</span>
+
+  <div class="actions">
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-heart"></i>
+    <i class="fas fa-heart"></i>
   </div>
-
-  <!-- routing here is temporary -->
-
-  <mat-menu #menu="matMenu" class="menu">
-    <button mat-menu-item class="menuItem" routerLink="/settings">
-      <i class="fas fa-cogs"></i>
-      <span>Settings</span>
-    </button>
-    <button mat-menu-item class="menuItem" routerLink="/login">
-      <i class="fas fa-sign-out-alt"></i>
-      <span>Logout</span>
-    </button>
-  </mat-menu>
-  <img
-    [src]="admin && admin.imageUrl ? admin.imageUrl : NO_IMG_URL"
-    class="adminImage"
-  />
 </nav>

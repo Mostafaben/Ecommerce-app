@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NavigationEnd, Route, Router, RouterLink } from '@angular/router';
+import { AdminDetails } from 'src/app/shared/interfaces/admin_interfaces';
 import { PAGES } from '../../../shared/ui_config';
 
 @Component({
@@ -10,6 +11,8 @@ import { PAGES } from '../../../shared/ui_config';
 export class SideMenuComponent implements OnInit {
   @Input() isOpened: boolean = true;
   @Output() sideMenuOpen: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Input() admin: AdminDetails | undefined;
+  readonly NO_IMG_URL = '/assets/download.jpg';
 
   constructor(private _router: Router) {}
 

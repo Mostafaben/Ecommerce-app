@@ -3,15 +3,16 @@
   flex-direction: column;
   background-color: var(--dark-color);
   min-height: fit-content;
-  height: calc(100vh - var(--main-spacing));
+  height: 100vh;
   overflow-y: auto;
   position: fixed;
-  top: var(--nav-bar-height);
+  top: 0px;
   left: 0px;
   padding: 20px 0px;
   align-items: center;
   width: var(--side-menu-width);
   transition-duration: 200ms;
+  overflow-x: hidden;
 }
 
 .items {
@@ -77,4 +78,31 @@
 }
 .collapseMenu .item i {
   margin: 0px !important;
+}
+
+.profile {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile span {
+  color: #eee;
+}
+
+.profile p {
+  color: white;
+}
+.adminImage {
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+  margin: 20px 0px;
+  background-color: whitesmoke;
+}
+
+.hideProfile {
+  display: none;
 }

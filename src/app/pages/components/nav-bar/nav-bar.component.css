@@ -2,14 +2,15 @@ nav {
   display: flex;
   height: var(--nav-bar-height);
   top: 0px;
-  left: 0px;
+  left: var(--side-menu-width);
   position: fixed;
   z-index: 2;
   background-color: white;
   align-items: center;
   flex-direction: row;
-  width: 100%;
-  border-bottom: 1px solid #eee;
+  width: calc(100vw - var(--side-menu-width));
+  /* border-bottom: 1px solid #eee; */
+  transition-duration: 200ms;
 }
 
 .logo {
@@ -21,35 +22,17 @@ nav {
   font-size: 18px;
   margin-left: 10px;
 }
+.expand {
+  left: var(--side-menu-min-width);
+  width: calc(100vw - var(--side-menu-min-width));
+}
 
-.profile {
-  margin-right: var(--main-spacing);
+.actions {
   margin-left: auto;
-  display: flex;
-  cursor: pointer;
-  flex-direction: column;
+  margin-right: 40px;
 }
-.profile span {
-  color: #888888;
-}
-.profile p {
-  margin: 0px;
-  margin-right: 10px;
-}
-
-.adminImage {
-  height: 50px;
-  width: 50px;
-  margin-right: var(--main-spacing);
-  border-radius: 25px;
-  background-color: whitesmoke;
-}
-
-.menuItem i {
-  color: #666;
-  font-size: 13px;
-}
-.menuItem span {
-  margin: 0px 20px;
-  font-size: 14px !important;
+.actions i {
+  font-size: 16px;
+  color: #888;
+  margin: 0px 10px;
 }

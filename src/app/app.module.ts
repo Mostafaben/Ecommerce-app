@@ -21,6 +21,7 @@ import { CategoriesManagementComponent } from './pages/categories-management/cat
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
 import { OrderPreviewComponent } from './pages/order-preview/order-preview.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,6 +48,7 @@ import { OrderPreviewComponent } from './pages/order-preview/order-preview.compo
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

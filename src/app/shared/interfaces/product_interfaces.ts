@@ -4,5 +4,9 @@ export interface Product {
   price: number;
   imageUrl: string;
   category: string;
-  type: string; 
+  type: string;
+}
+
+export interface ProductDetails extends Product {
+  description: string;
 }
